@@ -5,3 +5,4 @@ tags={
 }
 name="Pax Kirilland"
 supported_version="1.12.14"
+picture="thumbnail.png"
