@@ -63,7 +63,7 @@ country_event = {
 	id = kirilland.4
 	title = kirilland.4.t
 	desc = kirilland.4.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_4
 	
 	is_triggered_only = yes
 	
@@ -84,7 +84,7 @@ country_event = {
 	id = kirilland.5
 	title = kirilland.5.t
 	desc = kirilland.5.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_5
 	
 	is_triggered_only = yes
 	
@@ -112,7 +112,7 @@ country_event = {
 	id = kirilland.6
 	title = kirilland.6.t
 	desc = kirilland.6.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_6
 	
 	is_triggered_only = yes
 	
@@ -137,7 +137,7 @@ country_event = {
 	id = kirilland.7
 	title = kirilland.7.t
 	desc = kirilland.7.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_7
 	
 	is_triggered_only = yes
 	
