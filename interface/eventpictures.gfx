@@ -3169,4 +3169,12 @@ spriteTypes = {
 		name = "GFX_kirilland_event_1"
 		texturefile = "gfx/event_pictures/kirilland_event_1.dds"
 	}
+	spriteType = {
+		name = "GFX_kir_event_2"
+		texturefile = "gfx/event_pictures/kir_event_2.dds"
+	}
+	spriteType = {
+		name = "GFX_kir_event_3"
+		texturefile = "gfx/event_pictures/kir_event_3.dds"
+	}
 }

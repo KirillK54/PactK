@@ -23,7 +23,7 @@ country_event = {
 	id = kirilland.2
 	title = kirilland.2.t
 	desc = kirilland.2.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_2
 	
 	is_triggered_only = yes
 	
@@ -46,7 +46,7 @@ country_event = {
 	id = kirilland.3
 	title = kirilland.3.t
 	desc = kirilland.3.desc
-	picture = GFX_kirilland_event_1
+	picture = GFX_kir_event_3
 	
 	is_triggered_only = yes
 	
@@ -129,5 +129,28 @@ country_event = {
 		complete_national_focus = KIR_kpk
 		add_political_power = 100
 		remove_ideas = KIR_perevor
+	}
+}
+
+#Выборы
+country_event = {
+	id = kirilland.7
+	title = kirilland.7.t
+	desc = kirilland.7.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.7.a
+		
+		complete_national_focus = KIR_souz
+		add_political_power = 100
+}
+	option = {
+		name = kirilland.7.b
+		
+		complete_national_focus = KIR_rpk
+		add_political_power = 100
 	}
 }

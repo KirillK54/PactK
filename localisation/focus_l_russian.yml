@@ -2380,6 +2380,12 @@
  KIR_kms_desc:0 "Монархисты победили в Учредительном собрании"
  KIR_kpk:0 "КПК у власти"
  KIR_kpk_desc:0 "Коммунисты победили в Учредительном собрании"
+ KIR_elections:0 "Всеобщие выборы"
+ KIR_elections_desc:0 "Пришло время провести Выборы 1936 года"
+ KIR_souz:0 "Союз у власти"
+ KIR_souz_desc:0 "Партии "Союз" удалось победить на выборах"
+ KIR_rpk:0 "Радикалы у власти"
+ KIR_rpk_desc:0 "Радикальная партия Кирилланда победила на выборах"
  
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SOV_finish_five_year_plan:0 "Завершить пятилетку"
