@@ -1,0 +1,133 @@
+﻿add_namespace = kirilland
+
+#Ивент про XX век
+
+country_event = {
+	id = kirilland.1
+	title = kirilland.1.t
+	desc = kirilland.1.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.1.a
+		
+		add_political_power = 100
+		add_stability = -0.09
+	}
+}
+#Ивент про работу спец. служб
+
+country_event = {
+	id = kirilland.2
+	title = kirilland.2.t
+	desc = kirilland.2.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.2.a
+		
+		complete_national_focus = KIR_good
+	}
+
+	option = {
+		name = kirilland.2.b
+		
+		complete_national_focus = KIR_fal
+	}
+}
+
+#Заговор раскрыт
+
+country_event = {
+	id = kirilland.3
+	title = kirilland.3.t
+	desc = kirilland.3.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.3.a
+		
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+
+#Выборы сорваны
+country_event = {
+	id = kirilland.4
+	title = kirilland.4.t
+	desc = kirilland.4.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.4.a
+		
+		add_political_power = 100
+		add_stability = -0.1
+		swap_ideas = {
+		remove_idea = KIR_soviet
+		add_idea = KIR_perevor
+}
+	}
+}
+
+#переворот
+country_event = {
+	id = kirilland.5
+	title = kirilland.5.t
+	desc = kirilland.5.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.5.a
+		add_stability = -0.03
+		add_political_power = -200
+		
+		kill_ideology_leader = neutrality
+		create_country_leader = {
+		name = "Provisional government"
+		desc = "POLITICS_PEPE_NEYTRALOV_DESC"
+		picture = "gfx/leaders/KIR/Portrait_Switzerland_Federal_assembly.dds"
+		expire = "2017.1.1"
+		ideology = centrism
+		traits = {
+        #
+		}
+	}
+}
+	}
+#Учредительное собрание
+
+country_event = {
+	id = kirilland.6
+	title = kirilland.6.t
+	desc = kirilland.6.desc
+	picture = GFX_kirilland_event_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.6.a
+		
+		complete_national_focus = KIR_kms
+		add_political_power = 100
+		remove_ideas = KIR_perevor
+}
+	option = {
+		name = kirilland.6.b
+		
+		complete_national_focus = KIR_kpk
+		add_political_power = 100
+		remove_ideas = KIR_perevor
+	}
+}

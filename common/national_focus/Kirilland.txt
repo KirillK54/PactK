@@ -1,0 +1,155 @@
+focus_tree = {
+	id = Kirilland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KIR
+		}
+	}
+	default = no
+	focus = {
+		id = KIR_start
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 12,00
+		x = 16
+		y = 0
+			completion_reward = {
+					country_event = kirilland.1
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = KIR_sfq
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_start
+		}
+		x = 16
+		y = 1
+			completion_reward = {
+					country_event = kirilland.2
+				}
+
+	}
+	focus = {
+		id = KIR_fal
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_sfq
+		}
+		mutually_exclusive = {
+			focus = KIR_good
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					country_event = kirilland.4
+					add_ideas = KIR_gp
+				}
+
+	}
+	focus = {
+		id = KIR_1
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 3,00
+		prerequisite = {
+			focus = KIR_fal
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					country_event = kirilland.5
+				}
+
+	}
+	focus = {
+		id = KIR_constituent_assembly
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 17,00
+		prerequisite = {
+			focus = KIR_1
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					country_event = kirilland.6
+				}
+
+	}
+	focus = {
+		id = KIR_good
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_sfq
+		}
+		mutually_exclusive = {
+			focus = KIR_fal
+		}
+		x = 18
+		y = 2
+			completion_reward = {
+					country_event = kirilland.3
+				}
+
+	}
+	focus = {
+		id = KIR_kms
+		icon = GFX_focus_generic_monarchy_2
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_constituent_assembly
+		}
+		mutually_exclusive = {
+			focus = KIR_kpk
+		}
+		x = 9
+		y = 5
+			completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+						}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.5
+						}
+					set_stability = 0.5
+					set_political_power = 100
+					remove_ideas = KIR_kirill
+				}
+
+	}
+	focus = {
+		id = KIR_kpk
+		icon = GFX_focus_generic_join_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_constituent_assembly
+		}
+		mutually_exclusive = {
+			focus = KIR_kms
+		}
+		x = 15
+		y = 5
+			completion_reward = {
+					set_politics = {
+							ruling_party = communism
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = 0.5
+						}
+					set_stability = 0.3
+					set_political_power = 100
+				}
+
+	}
+}
