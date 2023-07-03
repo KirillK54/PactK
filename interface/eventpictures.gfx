@@ -3193,4 +3193,8 @@ spriteTypes = {
 		name = "GFX_kir_event_7"
 		texturefile = "gfx/event_pictures/kir_event_7.dds"
 }
+	spriteType = {
+		name = "GFX_kir_event_8"
+		texturefile = "gfx/event_pictures/kir_event_8.dds"
+}
 }

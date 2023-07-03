@@ -93,6 +93,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = KIR_kpk
+			focus = KIR_scn
 		}
 		x = 9
 		y = 5
@@ -111,6 +112,33 @@ focus_tree = {
 
 	}
 	focus = {
+		id = KIR_scn
+		icon = GFX_goal_support_fascism
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_constituent_assembly
+		}
+		mutually_exclusive = {
+			focus = KIR_kpk
+			focus = KIR_kms
+		}
+		x = 12
+		y = 5
+			completion_reward = {
+					set_politics = {
+							ruling_party = fnationalism
+						}
+					add_popularity = {
+							ideology = fnationalism
+							popularity = 0.5
+						}
+					set_stability = 0.5
+					set_political_power = 100
+					remove_ideas = KIR_perevor
+				}
+
+	}
+	focus = {
 		id = KIR_kpk
 		icon = GFX_focus_generic_join_comintern
 		cost = 10,00
@@ -119,6 +147,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = KIR_kms
+			focus = KIR_scn
 		}
 		x = 15
 		y = 5

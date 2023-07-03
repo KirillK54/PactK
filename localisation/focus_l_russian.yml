@@ -2390,6 +2390,8 @@
  KIR_nfk_desc:0 "Народный фронт победил на выборах"
  KIR_delrev:0 "Переосмыслить революцию"
  KIR_delrev_desc:0 "Мы должны переосмыслить революцию 1920 года и извлечь опыт"
+ KIR_scn:0 "Переворот СКН"
+ KIR_scn_desc:0 "Союз Кирилландских националистов устроили переворот"
  
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SOV_finish_five_year_plan:0 "Завершить пятилетку"
