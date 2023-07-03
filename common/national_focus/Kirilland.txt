@@ -139,6 +139,22 @@ focus_tree = {
 
 	}
 	focus = {
+		id = KIR_nrevol
+		icon = GFX_focus_eng_organise_the_blackshirts
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_scn
+		}
+		x = 12
+		y = 6
+			completion_reward = {
+					remove_ideas = KIR_revolt
+					set_stability = 0.09
+					add_ideas = KIR_nacrevol
+				}
+
+	}
+	focus = {
 		id = KIR_kpk
 		icon = GFX_focus_generic_join_comintern
 		cost = 10,00
@@ -301,6 +317,23 @@ focus_tree = {
 		y = 7
 			completion_reward = {
 					add_ideas = KIR_absmon
+				}
+
+	}
+	focus = {
+		id = KIR_compr
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_nrevol
+		}
+		x = 12
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = KIR_kirill
+							add_idea = KIR_kirilln
+						}
 				}
 
 	}

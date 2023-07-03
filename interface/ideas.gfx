@@ -7207,4 +7207,12 @@ spriteTypes = {
 		name = "GFX_idea_mex_revolutionary_army"
 		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
 	}
+	spriteType = {
+		name = "GFX_nacrevl"
+		texturefile = "gfx/interface/ideas/nacrevl.dds"
+	}
+	spriteType = {
+		name = "GFX_ideas_KIR_kirilln"
+		texturefile = "gfx/interface/ideas/ideas_KIR_kirilln.dds"
+	}
 }
