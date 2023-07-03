@@ -4141,11 +4141,13 @@
  KIR_democratic_DEF:0 "Кирилландское Содружество"
  KIR_communism:0 "Кирилландский союз"
  KIR_communism_DEF:0 "Кирилландский союз"
+ KIR_dsocialism:0 "Кирилландская федерация"
+ KIR_dsocialism_DEF:0 "Кирилландская федерация"
  KIR_fascism_ADJ:0 "Кирилландск."
  KIR_democratic_ADJ:0 "Кирилландск."
  KIR_neutrality_ADJ:0 "Кирилландск."
  KIR_communism_ADJ:0 "Кирилландск."
- 
+ KIR_dsocialism_ADJ:0 "Кирилландск."
 
  TTS:0 "Королевство Двух Сицилий"
  TTS_fascism:0 "Парфенопейская республика"

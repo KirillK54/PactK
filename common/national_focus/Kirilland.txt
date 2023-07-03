@@ -85,66 +85,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KIR_good
-		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10,00
-		prerequisite = {
-			focus = KIR_sfq
-		}
-		mutually_exclusive = {
-			focus = KIR_fal
-		}
-		x = 21
-		y = 2
-			completion_reward = {
-					country_event = kirilland.3
-				}
-
-	}
-	focus = {
-		id = KIR_elections
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10,00
-		prerequisite = {
-			focus = KIR_good
-		}
-		x = 21
-		y = 3
-			completion_reward = {
-					country_event = kirilland.7
-				}
-
-	}
-	focus = {
-		id = KIR_souz
-		icon = GFX_goal_support_democracy
-		cost = 10,00
-		prerequisite = {
-			focus = KIR_elections
-		}
-		mutually_exclusive = {
-			focus = KIR_rpk
-		}
-		x = 18
-		y = 4
-			completion_reward = {
-					set_politics = {
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.5
-						}
-					set_stability = 0.5
-					set_political_power = 100
-					remove_ideas = KIR_kirill
-				}
-
-	}
-	focus = {
 		id = KIR_kms
 		icon = GFX_focus_generic_monarchy_2
 		cost = 10,00
@@ -196,6 +136,95 @@ focus_tree = {
 
 	}
 	focus = {
+		id = KIR_good
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_sfq
+		}
+		mutually_exclusive = {
+			focus = KIR_fal
+		}
+		x = 22
+		y = 2
+			completion_reward = {
+					country_event = kirilland.3
+				}
+
+	}
+	focus = {
+		id = KIR_elections
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_good
+		}
+		x = 22
+		y = 3
+			completion_reward = {
+					country_event = kirilland.7
+				}
+
+	}
+	focus = {
+		id = KIR_souz
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_elections
+		}
+		mutually_exclusive = {
+			focus = KIR_nfk
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					set_politics = {
+							ruling_party = democratic
+							last_election = "1936.1.1"
+							election_frequency = 48
+							elections_allowed = no
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.5
+						}
+					set_stability = 0.5
+					set_political_power = 100
+					remove_ideas = KIR_kirill
+				}
+
+	}
+	focus = {
+		id = KIR_nfk
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_elections
+		}
+		mutually_exclusive = {
+			focus = KIR_souz
+			focus = KIR_rpk
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					set_politics = {
+							ruling_party = dsocialism
+							last_election = "1936.1.1"
+							election_frequency = 48
+							elections_allowed = yes
+						}
+					add_popularity = {
+							ideology = dsocialism
+							popularity = 0.5
+						}
+					set_stability = 0.5
+					set_political_power = 100
+				}
+
+	}
+	focus = {
 		id = KIR_rpk
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10,00
@@ -203,9 +232,9 @@ focus_tree = {
 			focus = KIR_elections
 		}
 		mutually_exclusive = {
-			focus = KIR_souz
+			focus = KIR_nfk
 		}
-		x = 24
+		x = 26
 		y = 4
 			completion_reward = {
 					add_popularity = {
@@ -214,6 +243,35 @@ focus_tree = {
 						}
 					set_stability = 0.3
 					set_political_power = 100
+				}
+
+	}
+	focus = {
+		id = KIR_delrev
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_kms
+		}
+		x = 9
+		y = 6
+			completion_reward = {
+					remove_ideas = KIR_revolt
+					set_stability = 0.09
+				}
+
+	}
+	focus = {
+		id = KIR_absmon
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_delrev
+		}
+		x = 9
+		y = 7
+			completion_reward = {
+					add_ideas = KIR_absmon
 				}
 
 	}

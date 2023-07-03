@@ -5,9 +5,9 @@ state=
 	
 	state_category = town
 	
-	manpower = 294748
+	manpower = 894748
 	resources={
-		steel=5 # was: 8
+		steel=8 # was: 9
 	}
 
 	history=
@@ -15,7 +15,7 @@ state=
 		owner = KIR
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			arms_factory = 2
 			industrial_complex = 3
 		}
 		victory_points = { 6583 5 }
