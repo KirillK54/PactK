@@ -155,6 +155,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = KIR_compr
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_nrevol
+		}
+		x = 12
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = KIR_kirill
+							add_idea = KIR_kirilln
+						}
+				}
+
+	}
+	focus = {
 		id = KIR_kpk
 		icon = GFX_focus_generic_join_comintern
 		cost = 10,00
@@ -321,19 +338,60 @@ focus_tree = {
 
 	}
 	focus = {
-		id = KIR_compr
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		id = KIR_arestocr
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10,00
 		prerequisite = {
-			focus = KIR_nrevol
+			focus = KIR_absmon
 		}
-		x = 12
-		y = 7
+		x = 9
+		y = 8
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = KIR_kirill
-							add_idea = KIR_kirilln
-						}
+					country_event = kirilland.9
+				}
+
+	}
+	focus = {
+		id = KIR_gossov
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_arestocr
+		}
+		x = 9
+		y = 9
+			completion_reward = {
+					country_event = kirilland.10
+				}
+
+	}
+	focus = {
+		id = KIR_minprom
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_gossov
+		}
+		x = 9
+		y = 10
+			completion_reward = {
+					add_ideas = KIR_mpr
+				}
+
+	}
+	focus = {
+		id = KIR_chr
+		icon = GFX_goal_generic_attack_allies
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_minprom
+		}
+		x = 9
+		y = 11
+			completion_reward = {
+					add_stability = -0.4
+					add_manpower = -100000
+					army_experience = -4
 				}
 
 	}

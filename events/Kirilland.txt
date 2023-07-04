@@ -180,5 +180,37 @@ country_event = {
 		name = kirilland.8.a
 		
 		complete_national_focus = KIR_scn
-}
 	}
+}
+
+#аристократия
+country_event = {
+	id = kirilland.9
+	title = kirilland.9.t
+	desc = kirilland.9.desc
+	picture = GFX_kir_event_9
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.9.a
+		
+		add_ideas = KIR_art
+	}
+}
+#Госсовет
+country_event = {
+	id = kirilland.10
+	title = kirilland.10.t
+	desc = kirilland.10.desc
+	picture = GFX_kir_event_10
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kirilland.10.a
+		
+		add_ideas = KIR_gssv
+	}
+}
+
