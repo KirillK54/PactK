@@ -395,4 +395,70 @@ focus_tree = {
 				}
 
 	}
+	focus = {
+		id = KIR_2
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_chr
+		}
+		x = 9
+		y = 12
+			completion_reward = {
+					create_faction = "Кирилландский пакт"
+				}
+
+	}
+	focus = {
+		id = KIR_gerwar
+		icon = GFX_focus_attack_germany
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_2
+		}
+		x = 9
+		y = 13
+			completion_reward = {
+					declare_war_on = {
+							target = GER
+							type = annex_everything
+							add_nationality = GER
+						}
+				}
+
+	}
+	focus = {
+		id = KIR_frawar
+		icon = GFX_focus_attack_france
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_gerwar
+		}
+		x = 9
+		y = 14
+			completion_reward = {
+					declare_war_on = {
+							target = FRA
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = KIR_swiwar
+		icon = GFX_focus_attack_switzerland
+		cost = 10,00
+		prerequisite = {
+			focus = KIR_frawar
+		}
+		x = 9
+		y = 15
+			completion_reward = {
+					declare_war_on = {
+							target = SWI
+							type = annex_everything
+						}
+				}
+
+	}
 }
